@@ -12,6 +12,7 @@ A portfolio of Swift and iOS projects exploring UIKit, Xcode tooling, and Apple 
 ### Interface Builder
 - Storyboard scenes and view controller layout
 - `@IBOutlet` connections between code and storyboard views
+- `@IBAction` button handlers wired from storyboard to view controller
 - Asset Catalog (`Assets.xcassets`) for image sets
 
 ### Swift / UIKit APIs
@@ -30,8 +31,8 @@ A portfolio of Swift and iOS projects exploring UIKit, Xcode tooling, and Apple 
 1. **I am Rich** — Single-screen app displaying a diamond image and "I Am Rich" text.
    Key concepts: UIKit, Storyboard layout, UIImageView, UILabel, Asset Catalog.
 
-2. **Dicee-iOS13** — Dice-roller app: green background, two dice, and a Roll button (UI complete; randomisation pending).
-   Key concepts: UIKit, Storyboard layout, IBOutlet, UIImageView, UIButton, Asset Catalog symbolic references (`UIImage(resource:)`), SceneDelegate window setup.
+2. **Dicee-iOS13** — Dice-roller app: green background, two dice, and a Roll button (Roll cycles dice faces via an image array; randomisation pending).
+   Key concepts: UIKit, Storyboard layout, IBOutlet/IBAction, UIImageView, UIButton, Asset Catalog symbolic references (`UIImage(resource:)`), array literals of `UIImage` indexed by state, SceneDelegate window setup.
 
 ## Author
 
