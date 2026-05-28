@@ -13,17 +13,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var diceImageView1: UIImageView!
     @IBOutlet weak var diceImageView2: UIImageView!
     
-    var leftDiceNumber = 1
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-     
-    }
-
+    // assigning all the dice images(as an array) to a constant
+    let diceArray = [UIImage(resource: .diceOne), UIImage(resource: .diceTwo), UIImage(resource: .diceThree), UIImage(resource: .diceFour), UIImage(resource: .diceFive), UIImage(resource: .diceSix)]
+    /*.randomElement() is used to randomize. This randomizes the dice that is viewed
+    whenever the roll button is pressed
+     */
     @IBAction func rollButtonPressed(_ sender: UIButton) {
-        diceImageView1.image = [UIImage(resource: .diceOne), UIImage(resource: .diceTwo), UIImage(resource: .diceThree), UIImage(resource: .diceFour), UIImage(resource: .diceFive)][leftDiceNumber]
-        
-        leftDiceNumber = leftDiceNumber + 1
+        diceImageView1.image = diceArray.randomElement()
+        diceImageView2.image = diceArray.randomElement()
+ 
     }
     
 }
